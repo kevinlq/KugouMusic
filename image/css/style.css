@@ -1,0 +1,145 @@
+QPushButton#pbnMenu::menu-indicator{
+    image:None;
+}
+QToolButton#tbnOk{
+    color: #666666;
+    border-radius:2px;
+    border: 1px solid #666666;
+}
+QToolButton#tbnOk:hover{
+    background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #F6F9FB, stop:1 #FFFFFF);
+}
+QPushButton#pbn_zoom{
+    border-style: solid;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width:1px;
+    border-radius:4px;
+    border-color:#729EC5;
+}
+
+QPushButton#pbnClose{
+    border-image:url(:/image/title/close.png);
+}
+QPushButton#pbnClose:hover{
+    border-image:url(:/image/title/close_hover.png);
+}
+QPushButton#pbnClose:pressed{
+    border-image:url(:/image/title/close_pressed.png);
+}
+QPushButton#pbnMin{
+    background-image:url(:/image/title/min.png);
+}
+
+QPushButton#pbnSkin{
+    background-image:url(:/image/title/skin.png);
+}
+QPushButton#pbnSkin:hover{
+    background-image:url(:/image/title/skin_hover.png);
+}
+QPushButton#pbnSkin:pressed{
+    background-image:url(:/image/title/skin_pressed.png);
+}
+QLabel#whitelabel{
+    color:white;
+}
+QPushButton#pbnWhite{
+    color:white;
+    background-color:#97AABA;
+    border-radius:6px;
+}
+QPushButton#pbnWhite:hover{
+    background-color:#748695;
+}
+QMenu{
+    background-color:rgb(255,255,255);
+    border:1px solid lightgray;
+}
+QMenu#remote_rightMenu{
+    background-color:rgb(9,120,165);
+    border:1px solid lightgray;
+}
+ 
+QMenu::item{
+    padding:1px 20px 1px 20px;
+    margin-left: 5px;
+    margin-right:5px;
+    margin-top:0px;
+    margin-bottom:0px;
+    height:30px;
+    width:110px;
+}
+ 
+QMenu::item:selected:enabled{
+    background-color:rgb(22,154,243);
+    color: white;
+}
+ 
+QMenu::separator{
+    height:1px;
+    background: lightgray;
+    margin:2px 0px 2px 0px;
+}
+ 
+QMenu::item:selected:!enabled{
+    background:transparent;
+}
+QSlider#musicVoice::groove:horizontal{
+    border:1px solid #4A7088;
+    background:#C0C0C0;
+    height:2px;
+    border-radius:1px;
+    padding-left:-1px;
+    padding-right:-1px;
+}
+QSlider::sub-page:horizontal {
+
+}
+QSlider#musicVoice::sub-page:horizontal{
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,stop:0 #B1B1B1, stop:1 #c4c4c4);
+    background: qlineargradient(x1: 0, y1: 0.2, x2: 1, y2: 1,stop: 0 #5DCCFF, stop: 1 #1874CD);
+    border: 1px solid #4A708B;
+    height: 2px;
+    border-radius: 2px;
+}
+QSlider#musicVoice::add-page:horizontal {
+    background: #575757;
+    border: 0px solid #777;
+    height: 2px;
+    border-radius: 2px;
+}
+QSlider#musicVoice::handle:horizontal
+{
+    background: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5,
+    stop:0.6 #45ADED, stop:0.778409 rgba(255, 255, 255, 255));
+
+    width: 11px;
+    margin-top: -3px;
+    margin-bottom: -3px;
+    border-radius: 5px;
+}
+QSlider#musicVoice::handle:horizontal:hover {
+    background: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0.6 #2A8BDA,
+    stop:0.778409 rgba(255, 255, 255, 255));
+
+    width: 11px;
+    margin-top: -3px;
+    margin-bottom: -3px;
+    border-radius: 5px;
+}
+QSlider#musicVoice::sub-page:horizontal:disabled {
+    background: #00009C;
+    border-color: #999;
+}
+
+QSlider#musicVoice::add-page:horizontal:disabled {
+    background: #eee;
+    border-color: #999;
+}
+
+QSlider#musicVoice::handle:horizontal:disabled {
+    background: #eee;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+}
